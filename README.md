@@ -5,15 +5,37 @@ Predicting heart disease using machine learning
 [Course Link](https://www.udemy.com/share/102vAM3@Is9tP5bT9ywhTr2HBL2CgBmp9AXdZ3teTMchBf_cXAw38OEv12XISZv7TcAU9YWGrQ==/)
 
 ---
+** Project Structure**
+
+```
+Heart-Disease-Classification/
+│
+├── App/
+│   ├── app.py                      # Main application (UI / API / interface)
+│   └── connecter.py                # Handles database or model connections
+│
+├── Dataset/
+│   └── heart-disease.csv           # Main dataset file
+│
+├── Model/
+│   └── logistic_regression_model.pkl  # Saved trained model
+│
+├── Notebook/
+│   └── Heart-Disease-Classification.ipynb  # Jupyter notebook for analysis
+│
+├── README.md                       # Project overview and usage instructions
+└── requirements.txt                 # Dependencies list
+
+```
 
 ## The Approach we will be following :
 
-|--- 1. Problem definition
-|--- 2. Data
-|--- 3. Evaluation
-|--- 4. Features
-|--- 5. Modelling
-|--- 6. Experimentation
+|-- 1. Problem definition <br>
+|-- 2. Data <br>
+|-- 3. Evaluation <br>
+|-- 4. Features <br>
+|-- 5. Modelling <br>
+|-- 6. Experimentation <br>
 
 ---
 
@@ -92,3 +114,53 @@ If we achieve **95% accuracy**, we will consider the effort worth it (maybe or m
     - 1 = Yes  
     - 0 = No  
     - *(Predicted attribute)*  
+---
+##  How to Use the App
+
+### Step 1: Clone the Repository
+- Run the following command in your terminal 
+```bash
+git clone https://github.com/Skanda02/Heart-Disease-Classification.git
+```
+
+---
+### Step 2: Create a Virtual Environment
+- On macOS / Linux:
+
+```bash
+python3 -m venv .venv
+```
+- On Windows:
+
+```bash
+python -m venv .venv
+```
+---
+### Step 3: Activate the Virtual Environment and Install Dependencies
+Activate the environment:
+
+- macOS / Linux:
+```bash
+source .venv/bin/activate
+```
+- Windows:
+```bash
+.venv\Scripts\activate
+```
+Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+---
+### Step 4: Run the App
+
+Start the application by running:
+- macOS / Linux
+```bash
+python3 app.py
+```
+- Windows
+```bash
+python app.py
+```
+---
