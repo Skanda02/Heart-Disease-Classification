@@ -157,10 +157,10 @@ pip install -r requirements.txt
 Start the application by running:
 - macOS / Linux
 ```bash
-python3 app.py
+python3 App/app.py
 ```
 - Windows
 ```bash
-python app.py
+python App/app.py
 ```
 ---
